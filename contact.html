@@ -1,16 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact | Mohd Maviya</title>
 
     <!-- Shared CSS -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
 
     <!-- Font Awesome -->
     <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
+    <style>
+        /* minimal extra style for feedback */
+        .form-feedback {
+            margin-top: 1rem;
+            padding: 0.75rem 1rem;
+            border-radius: 8px;
+            font-weight: 500;
+            display: none;
+        }
+        .form-feedback.success {
+            display: block;
+            background: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+        .form-feedback.error {
+            display: block;
+            background: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+        .btn:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+    </style>
 </head>
 <body>
 
@@ -18,7 +45,6 @@
     <header class="header">
         <div class="container">
             <a href="index.html" class="logo">Mohd Maviya</a>
-
             <nav class="navbar">
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -44,186 +70,236 @@
     <!-- ================= CONTACT SECTION ================= -->
     <section class="contact section">
         <div class="container">
-
             <div class="contact-wrapper">
 
                 <!-- Contact Form -->
                 <div class="contact-form">
-
                     <h2>Send a Message</h2>
 
-                    <form action="#" method="post">
+                    <!-- feedback message -->
+                    <div id="formFeedback" class="form-feedback"></div>
 
+                    <form id="contactForm" method="post">
                         <div class="form-group">
                             <label>Full Name</label>
-                            <input type="text" placeholder="Enter your name" required>
+                            <input type="text" id="fullName" placeholder="Enter your name" required />
                         </div>
 
                         <div class="form-group">
                             <label>Email Address</label>
-                            <input type="email" placeholder="Enter your email" required>
+                            <input type="email" id="emailAddress" placeholder="Enter your email" required />
                         </div>
 
                         <div class="form-group">
                             <label>Subject</label>
-                            <input type="text" placeholder="Enter subject" required>
+                            <input type="text" id="subject" placeholder="Enter subject" required />
                         </div>
 
                         <div class="form-group">
                             <label>Message</label>
-                            <textarea rows="6"
-                                placeholder="Write your message here..."
-                                required></textarea>
+                            <textarea id="message" rows="6"
+                                      placeholder="Write your message here..."
+                                      required></textarea>
                         </div>
 
-                        <button type="submit" class="btn">
+                        <button type="submit" class="btn" id="submitBtn">
                             <i class="fas fa-paper-plane"></i>
                             Send Message
                         </button>
-
                     </form>
-
                 </div>
 
                 <!-- Contact Info -->
                 <div class="contact-info">
-
                     <h2>Contact Information</h2>
-
                     <div class="info-card">
                         <i class="fas fa-envelope"></i>
-
                         <div>
                             <h3>Email</h3>
                             <p>mohdmaviya425@gmail.com</p>
                         </div>
                     </div>
-
                     <div class="info-card">
                         <i class="fas fa-phone"></i>
-
                         <div>
                             <h3>Phone</h3>
                             <p>+91 7500295031</p>
                         </div>
                     </div>
-
                     <div class="info-card">
                         <i class="fas fa-location-dot"></i>
-
                         <div>
                             <h3>Location</h3>
                             <p>Roorkee, Uttarakhand, India</p>
                         </div>
                     </div>
-
                     <div class="info-card">
                         <i class="fas fa-user-graduate"></i>
-
                         <div>
                             <h3>Education</h3>
-                            <p>BCA (DevOps)<br>COER University, Roorkee</p>
+                            <p>BCA (DevOps)<br />COER University, Roorkee</p>
                         </div>
                     </div>
-
                 </div>
 
             </div>
-
         </div>
     </section>
 
     <!-- ================= SOCIAL MEDIA ================= -->
     <section class="section">
         <div class="container">
-
             <h2 class="section-title">Connect With Me</h2>
-
             <div class="social-icons">
-
                 <a href="https://github.com/" target="_blank">
                     <i class="fab fa-github"></i>
                     <span>GitHub</span>
                 </a>
-
                 <a href="https://linkedin.com/" target="_blank">
                     <i class="fab fa-linkedin"></i>
                     <span>LinkedIn</span>
                 </a>
-
                 <a href="https://instagram.com/" target="_blank">
                     <i class="fab fa-instagram"></i>
                     <span>Instagram</span>
                 </a>
-
             </div>
-
         </div>
     </section>
 
     <!-- ================= CTA ================= -->
     <section class="section">
         <div class="container">
-
             <div class="goal-card">
-
                 <h2>Let's Build Something Amazing Together</h2>
-
                 <p>
                     I am always eager to learn new technologies, contribute to
                     exciting projects, and collaborate with developers and
                     organizations. Feel free to reach out if you have an
                     opportunity or just want to connect.
                 </p>
-
                 <a href="projects.html" class="btn">
                     View My Projects
                 </a>
-
             </div>
-
         </div>
     </section>
 
     <!-- ================= FOOTER ================= -->
     <footer class="footer">
         <div class="container">
-
             <h3>Mohd Maviya</h3>
-
             <p>BCA (DevOps) Student | Aspiring DevOps Engineer</p>
-
             <div class="footer-links">
                 <a href="index.html">Home</a>
                 <a href="education.html">Education</a>
                 <a href="projects.html">Projects</a>
                 <a href="contact.html">Contact</a>
             </div>
-
             <div class="social-links">
-                <a href="https://github.com/" target="_blank">
-                    <i class="fab fa-github"></i>
-                </a>
-
-                <a href="https://linkedin.com/" target="_blank">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-
-                <a href="https://instagram.com/" target="_blank">
-                    <i class="fab fa-instagram"></i>
-                </a>
+                <a href="https://github.com/" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
             </div>
-
             <p class="copyright">
-                © 2026 Mohd Maviya. All Rights Reserved.
+                &copy; 2026 Mohd Maviya. All Rights Reserved.
             </p>
-
             <p>
-                Designed & Developed by <strong>Mohd Maviya</strong>
+                Designed &amp; Developed by <strong>Mohd Maviya</strong>
             </p>
-
         </div>
     </footer>
+
+    <!-- ================= SHEETY API INTEGRATION ================= -->
+    <script>
+        (function() {
+            const SHEETY_URL = 'https://api.sheety.co/1af8e3c9e0b69c2248ee1d94e5fa67b0/contact/sheet1';
+
+            const form = document.getElementById('contactForm');
+            const feedback = document.getElementById('formFeedback');
+            const submitBtn = document.getElementById('submitBtn');
+
+            // Helper to show feedback
+            function showFeedback(message, type = 'success') {
+                feedback.textContent = message;
+                feedback.className = 'form-feedback ' + type;
+                // auto-hide after 6s
+                setTimeout(() => {
+                    feedback.className = 'form-feedback';
+                }, 6000);
+            }
+
+            // Handle form submission
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+
+                // Collect data
+                const name = document.getElementById('fullName').value.trim();
+                const email = document.getElementById('emailAddress').value.trim();
+                const subject = document.getElementById('subject').value.trim();
+                const message = document.getElementById('message').value.trim();
+
+                // Basic validation
+                if (!name || !email || !subject || !message) {
+                    showFeedback('Please fill in all fields.', 'error');
+                    return;
+                }
+
+                // Prepare payload according to Sheety format
+                const payload = {
+                    sheet1: {
+                        name: name,
+                        email: email,
+                        subject: subject,
+                        message: message
+                    }
+                };
+
+                // Disable button and show sending state
+                submitBtn.disabled = true;
+                submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+
+                // POST to Sheety
+                fetch(SHEETY_URL, {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify(payload)
+                    })
+                    .then(response => {
+                        if (!response.ok) {
+                            throw new Error('Server responded with status ' + response.status);
+                        }
+                        return response.json();
+                    })
+                    .then(data => {
+                        // Success
+                        showFeedback('✅ Your message has been sent successfully!', 'success');
+                        form.reset();
+                        console.log('Sheety response:', data);
+                    })
+                    .catch(error => {
+                        console.error('Fetch error:', error);
+                        showFeedback('❌ Something went wrong. Please try again later.', 'error');
+                    })
+                    .finally(() => {
+                        // Re-enable button
+                        submitBtn.disabled = false;
+                        submitBtn.innerHTML = '<i class="fas fa-paper-plane"></i> Send Message';
+                    });
+            });
+
+            // (Optional) GET example – uncomment to test reading data
+            /*
+            fetch(SHEETY_URL)
+                .then(res => res.json())
+                .then(data => console.log('GET data:', data))
+                .catch(err => console.warn('GET error:', err));
+            */
+
+        })();
+    </script>
 
 </body>
 </html>
