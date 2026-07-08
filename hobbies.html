@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hobbies | Mohd Maviya</title>
+
+    <!-- Shared CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <style>
+        /* Hobbies Styles */
+        .hobbies-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .hobby-card {
+            background: #fff;
+            padding: 35px 30px;
+            border-radius: 14px;
+            box-shadow: 0 5px 15px rgba(0,0,0,.08);
+            text-align: center;
+            transition: .3s;
+        }
+
+        .hobby-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 10px 30px rgba(0,0,0,.12);
+        }
+
+        .hobby-card i {
+            font-size: 2.8rem;
+            color: var(--primary);
+            margin-bottom: 15px;
+        }
+
+        .hobby-card h3 {
+            color: var(--dark);
+            margin-bottom: 10px;
+            font-size: 1.3rem;
+        }
+
+        .hobby-card p {
+            color: var(--text);
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        .hobby-tag {
+            display: inline-block;
+            background: #eaf2ff;
+            color: var(--primary);
+            padding: 4px 14px;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            margin-top: 10px;
+        }
+
+        .hobby-games {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            justify-content: center;
+            margin: 10px 0;
+        }
+
+        .hobby-games span {
+            background: #f0f4ff;
+            color: var(--primary);
+            padding: 3px 12px;
+            border-radius: 12px;
+            font-size: 0.8rem;
+            border: 1px solid #dce5ff;
+        }
+
+        .page-title {
+            text-align: center;
+            padding: 70px 0;
+            background: #eaf2ff;
+        }
+
+        .page-title h1 {
+            font-size: 3rem;
+            color: var(--dark);
+        }
+
+        .page-title p {
+            color: var(--text);
+            max-width: 600px;
+            margin: 10px auto 0;
+        }
+
+        .section {
+            padding: 70px 0;
+        }
+
+        @media(max-width:768px) {
+            .hobbies-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">Mohd Maviya</a>
+
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="hobbies.html" class="active">Hobbies</a></li>
+                    <li><a href="movements.html">Movements</a></li>
+                    <li><a href="education.html">Education</a></li>
+                    <li><a href="project.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ================= PAGE TITLE ================= -->
+    <section class="page-title">
+        <div class="container">
+            <h1>
+                <i class="fas fa-heart" style="color: var(--primary);"></i>
+                My Hobbies
+            </h1>
+            <p>Things I love to do in my free time</p>
+        </div>
+    </section>
+
+    <!-- ================= HOBBIES SECTION ================= -->
+    <section class="section">
+        <div class="container">
+
+            <div class="hobbies-grid">
+
+                <!-- Hobby 1: Online Gaming -->
+                <div class="hobby-card">
+                    <i class="fas fa-gamepad"></i>
+                    <h3>Online Gaming</h3>
+                    <p>
+                        I love playing competitive online games. Gaming helps me 
+                        improve my reflexes, strategy thinking, and teamwork skills.
+                    </p>
+                    <div class="hobby-games">
+                        <span>🎮 GTA V</span>
+                        <span>🔥 Free Fire</span>
+                        <span>🔫 PUBG</span>
+                    </div>
+                    <span class="hobby-tag">
+                        <i class="fas fa-trophy"></i> Competitive Gamer
+                    </span>
+                </div>
+
+                <!-- Hobby 2: Bike Riding -->
+                <div class="hobby-card">
+                    <i class="fas fa-motorcycle"></i>
+                    <h3>Bike Riding</h3>
+                    <p>
+                        I enjoy riding bikes and feeling the freedom of the open road. 
+                        It's my way to relax and explore new places.
+                    </p>
+                    <div class="hobby-games">
+                        <span>🏍️ Cruiser</span>
+                        <span>🌄 Adventure</span>
+                    </div>
+                    <span class="hobby-tag">
+                        <i class="fas fa-road"></i> Road Rider
+                    </span>
+                </div>
+
+                <!-- Hobby 3: Cars & Driving -->
+                <div class="hobby-card">
+                    <i class="fas fa-car"></i>
+                    <h3>Cars & Driving</h3>
+                    <p>
+                        I'm passionate about cars and driving. Whether it's a long 
+                        drive or just cruising, I love everything about automobiles.
+                    </p>
+                    <div class="hobby-games">
+                        <span>🚗 Sports Cars</span>
+                        <span>🛣️ Road Trips</span>
+                    </div>
+                    <span class="hobby-tag">
+                        <i class="fas fa-gas-pump"></i> Car Enthusiast
+                    </span>
+                </div>
+
+                <!-- Hobby 4: Learning -->
+                <div class="hobby-card">
+                    <i class="fas fa-book-open"></i>
+                    <h3>Learning New Things</h3>
+                    <p>
+                        I'm always curious to learn new technologies, programming 
+                        languages, and DevOps tools to grow my skills.
+                    </p>
+                    <div class="hobby-games">
+                        <span>💻 DevOps</span>
+                        <span>☁️ Cloud</span>
+                        <span>🐧 Linux</span>
+                    </div>
+                    <span class="hobby-tag">
+                        <i class="fas fa-graduation-cap"></i> Lifelong Learner
+                    </span>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+        <div class="container">
+            <h3>Mohd Maviya</h3>
+            <p>BCA (DevOps) Student | Aspiring DevOps Engineer</p>
+
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="hobbies.html">Hobbies</a>
+                <a href="movements.html">Movements</a>
+                <a href="education.html">Education</a>
+                <a href="project.html">Projects</a>
+                <a href="contact.html">Contact</a>
+            </div>
+
+            <div class="social-links">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+
+            <p class="copyright">
+                © 2026 Mohd Maviya. All Rights Reserved.
+            </p>
+
+            <p>
+                Designed & Developed by <strong>Mohd Maviya</strong>
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>

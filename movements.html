@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movements | Mohd Maviya</title>
+
+    <!-- Shared CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <style>
+        /* Movements Styles */
+        .movements-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .movement-card {
+            background: #fff;
+            padding: 35px 30px;
+            border-radius: 14px;
+            box-shadow: 0 5px 15px rgba(0,0,0,.08);
+            text-align: center;
+            transition: .3s;
+        }
+
+        .movement-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 10px 30px rgba(0,0,0,.12);
+        }
+
+        .movement-card i {
+            font-size: 2.8rem;
+            color: var(--primary);
+            margin-bottom: 15px;
+        }
+
+        .movement-card h3 {
+            color: var(--dark);
+            margin-bottom: 10px;
+            font-size: 1.3rem;
+        }
+
+        .movement-card p {
+            color: var(--text);
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        .movement-tag {
+            display: inline-block;
+            background: var(--primary);
+            color: white;
+            padding: 4px 14px;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            margin-top: 10px;
+        }
+
+        .movement-tag i {
+            font-size: 0.9rem;
+            color: white;
+            margin-right: 5px;
+        }
+
+        .page-title {
+            text-align: center;
+            padding: 70px 0;
+            background: #eaf2ff;
+        }
+
+        .page-title h1 {
+            font-size: 3rem;
+            color: var(--dark);
+        }
+
+        .page-title p {
+            color: var(--text);
+            max-width: 600px;
+            margin: 10px auto 0;
+        }
+
+        .section {
+            padding: 70px 0;
+        }
+
+        @media(max-width:768px) {
+            .movements-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">Mohd Maviya</a>
+
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="hobbies.html">Hobbies</a></li>
+                    <li><a href="movements.html" class="active">Movements</a></li>
+                    <li><a href="education.html">Education</a></li>
+                    <li><a href="project.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ================= PAGE TITLE ================= -->
+    <section class="page-title">
+        <div class="container">
+            <h1>
+                <i class="fas fa-camera" style="color: var(--primary);"></i>
+                My Movements
+            </h1>
+            <p>Every journey creates memories. Here's what drives my movements</p>
+        </div>
+    </section>
+
+    <!-- ================= MOVEMENTS SECTION ================= -->
+    <section class="section">
+        <div class="container">
+
+            <div class="movements-grid">
+
+                <!-- Movement 1: Travel -->
+                <div class="movement-card">
+                    <i class="fas fa-globe-asia"></i>
+                    <h3>Traveling</h3>
+                    <p>
+                        I love to travel and explore new places. Every destination 
+                        has a unique story, culture, and beauty that I want to discover.
+                    </p>
+                    <span class="movement-tag">
+                        <i class="fas fa-map-pin"></i> Always Exploring
+                    </span>
+                </div>
+
+                <!-- Movement 2: Creating Memories -->
+                <div class="movement-card">
+                    <i class="fas fa-camera-retro"></i>
+                    <h3>Creating Memories</h3>
+                    <p>
+                        I believe in capturing every beautiful moment. Whether it's 
+                        a scenic view, a fun time with friends, or a new experience.
+                    </p>
+                    <span class="movement-tag">
+                        <i class="fas fa-images"></i> Memory Keeper
+                    </span>
+                </div>
+
+                <!-- Movement 3: Nature & Adventure -->
+                <div class="movement-card">
+                    <i class="fas fa-mountain"></i>
+                    <h3>Nature & Adventure</h3>
+                    <p>
+                        I'm drawn to mountains, forests, and scenic landscapes. 
+                        Nature inspires me and gives me peace of mind.
+                    </p>
+                    <span class="movement-tag">
+                        <i class="fas fa-tree"></i> Nature Lover
+                    </span>
+                </div>
+
+                <!-- Movement 4: Road Trips -->
+                <div class="movement-card">
+                    <i class="fas fa-road"></i>
+                    <h3>Road Trips</h3>
+                    <p>
+                        Nothing beats the thrill of a road trip with good music 
+                        and great company. The journey matters as much as the destination.
+                    </p>
+                    <span class="movement-tag">
+                        <i class="fas fa-music"></i> Journey & Music
+                    </span>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+        <div class="container">
+
+            <h3>Mohd Maviya</h3>
+
+            <p>BCA (DevOps) Student | Aspiring DevOps Engineer</p>
+
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="hobbies.html">Hobbies</a>
+                <a href="movements.html">Movements</a>
+                <a href="education.html">Education</a>
+                <a href="project.html">Projects</a>
+                <a href="contact.html">Contact</a>
+            </div>
+
+            <div class="social-links">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+
+            <p class="copyright">
+                © 2026 Mohd Maviya. All Rights Reserved.
+            </p>
+
+            <p>
+                Designed & Developed by <strong>Mohd Maviya</strong>
+            </p>
+
+        </div>
+    </footer>
+
+</body>
+</html>

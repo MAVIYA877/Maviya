@@ -9,6 +9,61 @@
 
     <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <style>
+        /* Additional styles for education preview */
+        .education-preview {
+            background: var(--bg-light);
+            padding: 2rem;
+            border-radius: 12px;
+            margin-top: 2rem;
+            border-left: 4px solid var(--primary-color);
+        }
+        
+        .education-preview h3 {
+            color: var(--primary-color);
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .education-preview .current-status {
+            display: inline-block;
+            background: var(--primary-color);
+            color: white;
+            padding: 0.3rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            margin: 0.5rem 0;
+        }
+        
+        .education-preview .edu-details {
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            margin: 1rem 0;
+        }
+        
+        .education-preview .edu-details span {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+        
+        .btn-full-details {
+            margin-top: 1rem;
+        }
+        
+        .btn-full-details i {
+            margin-left: 0.5rem;
+            transition: transform 0.3s;
+        }
+        
+        .btn-full-details:hover i {
+            transform: translateX(5px);
+        }
+    </style>
 </head>
 
 <body>
@@ -21,6 +76,8 @@
         <nav class="navbar">
             <ul>
                 <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="hobbies.html">Hobbies</a></li>
+                <li><a href="movements.html">Movements</a></li>
                 <li><a href="education.html">Education</a></li>
                 <li><a href="project.html">Projects</a></li>
                 <li><a href="contact.html">Contact</a></li>
@@ -71,23 +128,80 @@
             My goal is to become a professional DevOps Engineer.
         </p>
 
+        <!-- ===== EDUCATION PREVIEW / BUTTON ===== -->
+        <div class="education-preview">
+            
+            <h3>
+                <i class="fas fa-graduation-cap" style="margin-right: 0.5rem;"></i>
+                Currently Pursuing
+            </h3>
+            
+            <div style="font-size: 1.2rem; font-weight: 600; margin: 0.5rem 0;">
+                BCA (DevOps)
+            </div>
+            
+            <div style="color: var(--text-muted); margin-bottom: 0.5rem;">
+                <i class="fas fa-university"></i> COER University, Roorkee
+            </div>
+            
+            <span class="current-status">
+                <i class="fas fa-clock"></i> 3rd Semester
+            </span>
+            
+            <div class="edu-details">
+                <span>
+                    <i class="fas fa-calendar-alt"></i> 2025 – Present
+                </span>
+                <span>
+                    <i class="fas fa-code"></i> DevOps Specialization
+                </span>
+                <span>
+                    <i class="fas fa-cloud"></i> Cloud Computing
+                </span>
+            </div>
+            
+            <a href="education.html" class="btn btn-full-details">
+                View Full Education Details
+                <i class="fas fa-arrow-right"></i>
+            </a>
+            
+        </div>
+
     </div>
 
 </section>
 
+<!-- ================= FOOTER ================= -->
 <footer class="footer">
 
     <div class="container">
 
         <h3>Mohd Maviya</h3>
 
-        <p>Roorkee, Uttarakhand, India</p>
+        <p>BCA (DevOps) Student | Aspiring DevOps Engineer</p>
 
-        <p>Email: mohdmaviya425@gmail.com</p>
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="hobbies.html">Hobbies</a>
+            <a href="movements.html">Movements</a>
+            <a href="education.html">Education</a>
+            <a href="project.html">Projects</a>
+            <a href="contact.html">Contact</a>
+        </div>
 
-        <p>Phone: +91 7500295031</p>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
 
-        <p>Designed & Developed by Mohd Maviya</p>
+        <p class="copyright">
+            © 2026 Mohd Maviya. All Rights Reserved.
+        </p>
+
+        <p>
+            Designed & Developed by <strong>Mohd Maviya</strong>
+        </p>
 
     </div>
 
